@@ -86,7 +86,7 @@ export default class AwesomeProject extends Component {
           renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
           keyExtractor = {this._extraUniqueKey} 
         />
-
+        <Blink text = '输入文字变蛋糕' />   
         <TextInput
           style={{height:40}}
           placeholder='tap here translate!'
@@ -99,7 +99,7 @@ export default class AwesomeProject extends Component {
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
         <Image source={pic} style={{width: 193, height: 110}} />
 
-            <Blink text = 'Yes BLINKING is so great' />     
+             
 
             <Text style={[styles.red,styles.bigblue]}>
           Hello World!
