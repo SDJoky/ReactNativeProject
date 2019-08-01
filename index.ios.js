@@ -80,7 +80,7 @@ export default class AwesomeProject extends Component {
         
           sections={[
             {key:'D',title: 'D', data: ['Devin']},
-            {key:'',title: 'J', data: ['Jackson', 'James', 'Jillian', 'Jimmy', 'Joel', 'John', 'Julie']}
+            {key:'',title: 'J', data: ['Jackson', 'James', 'Jillian', 'Jimmy']}
           ]}
           renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
           renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
@@ -97,13 +97,11 @@ export default class AwesomeProject extends Component {
        </Text>
 
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <Text style={[styles.red,styles.bigblue]}>
+          Hello World!
+          </Text>
         <Image source={pic} style={{width: 193, height: 110}} />
 
-             
-
-            <Text style={[styles.red,styles.bigblue]}>
-          Hello World!
-        </Text>
       </View>
       // </ScrollView>
     )
