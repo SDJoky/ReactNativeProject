@@ -60,10 +60,10 @@ export default class AwesomeProject extends Component {
     };
 
     return(
-      // <ScrollView style={[styles.container,{padding:10}] }>
-      <View style={[styles.container,{padding:10}] }>
+      <ScrollView style={[styles.container,{padding:10}] }>
+      {/* <View style={[styles.container,{padding:10}] }> */}
 
-      {/* <FlatList
+       <FlatList
         data={[
           {key:'A'},
           {key:'B'},
@@ -73,7 +73,7 @@ export default class AwesomeProject extends Component {
         ]
         }
         renderItem = {({item}) => <Text style = {styles.item}>{item.key}</Text>}
-      /> */}
+      />
 
 
       <SectionList
@@ -86,7 +86,9 @@ export default class AwesomeProject extends Component {
           renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
           keyExtractor = {this._extraUniqueKey} 
         />
-        <Blink text = '输入文字变蛋糕' />   
+
+        <Blink text = '输入文字变蛋糕看看' />   
+
         <TextInput
           style={{height:40}}
           placeholder='tap here translate!'
@@ -96,33 +98,33 @@ export default class AwesomeProject extends Component {
           {this.state.text.split(' ').map((word) => word && '🎂').join(' ')}
        </Text>
 
-        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 20, height: 20, backgroundColor: 'powderblue'}} />
         <Text style={[styles.red,styles.bigblue]}>
           Hello World!
           </Text>
-        <Image source={pic} style={{width: 193, height: 110}} />
+        <Image source={pic} style={{width: 103, height: 80}} />
 
-      </View>
-      // </ScrollView>
+      {/* </View> */}
+      </ScrollView>
     )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F5FCFF',
     flexDirection: 'column',
     flex: 1,
-    paddingTop:22,
+    paddingTop:10,
   },
 
   sectionHeader:{
-    paddingTop:2,
+    paddingTop:20,
     paddingLeft:10,
     paddingRight:10,
-    paddingBottom:2,
+    paddingBottom:20,
     fontSize:10,
     fontWeight:'bold',
     backgroundColor:'rgba(247,247,247,1.0)',
